@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Products</h2>  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>SKU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products" >
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.sku }}</td>
+      </tr>     
+    </tbody>
+  </table>
+  <div class="alert alert-danger" *ngIf="messageError" >
+    <strong>Alert!</strong> {{messageError}}
+  </div>  
+</div>
+

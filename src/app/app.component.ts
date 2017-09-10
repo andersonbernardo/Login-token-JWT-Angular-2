@@ -1,3 +1,4 @@
+import { LoginService } from './account/login.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private loginService: LoginService) {}
+
+  Logout() {
+      this.loginService.logout();
+  }
 }
