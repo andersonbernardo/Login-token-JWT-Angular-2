@@ -1,4 +1,4 @@
-# LoginTokenFCamara
+# Login Token JWT - Angular 2
 
 Login with jwt token authentication
 
